@@ -1,0 +1,207 @@
+body{
+    display: grid;
+    grid-template: repeat(5, minmax(100px, auto)) / minmax(320px, 1000px);
+    margin: 0;
+    justify-content: center;
+    font-family: 'Abel', sans-serif;
+    font-weight: normal;
+    color: white;
+    background-color: #1C2E37;
+    column-gap: 20px;
+}
+
+header{
+    display: grid;
+    justify-content: space-between;
+    justify-items: center;
+    grid-template: repeat(2, 1fr) / 46.2% 43.4%;
+    grid-template-areas: 
+        "header-title header-tip"
+        "header-nav header-nav";
+    margin-top: 20px;
+}
+
+.item{
+    border: 1px solid red;
+}
+
+h1{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    margin: 0px;
+}
+
+h2{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    margin: 0px;    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+p{
+    font-family: 'Abel', sans-serif;    
+}
+
+ol{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+figure{
+    margin: 0px;
+}
+
+footer{
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, 50%);
+}
+
+/* Class Tags */
+
+.header-title{
+    grid-area: header-title;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+  }
+
+.header-title h1{
+    font-size: 3.875em;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.header-title h2{
+    font-size: 1.5em;
+    text-align: right;
+    margin-top: -10px;
+}
+
+.header-tip{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    color: #A9ABAE;
+    grid-area: header-tip;
+}
+
+.header-tip p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8125em;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.header-tip-title{
+    font-size: 1.5625em;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid white;
+    padding: 20px 0px 40px 0px;
+    grid-area: header-nav;
+    width: 100%;
+}
+
+.header-nav ol{
+    display: inline-grid;
+    grid-auto-flow: column;
+    grid-column-gap: 20px;
+}
+
+.header-nav li{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2.1875em;
+    text-transform: uppercase;
+}
+
+.hero-text{
+    border-bottom: 2px solid white;
+    margin-bottom: 70px;
+}
+
+.hero-text p{
+    font-family: 'Abel', sans-serif;
+    font-weight: normal;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0px;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid white;
+    margin-bottom: 65px;
+    grid-column: 1 / span 2;
+}
+
+.footer-nav ol{
+    display: inline-grid;
+    grid-auto-flow: column;
+    column-gap: 30px;
+}
+
+.footer-nav li{
+    font-size: 1.5625em;    
+}
+
+.footer-title-section{
+    display: flex;
+    justify-content: space-around;
+    grid-column: 1 / span 2;
+}
+
+.footer-title h1,
+h2{
+    font-family: 'Abel', sans-serif;
+}
+
+.footer-title h1{
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+.footer-title h2{
+    text-align: right;
+}
+
+.footer-final-line{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-final-line-right{
+    text-align: right;
+}
+
+.footer-social-links{
+    text-align: center;
+    grid-column: 1 / span 2;
+    margin-top: 32px;
+}
+
+.footer-social-links img{
+    width: 50px;
+    height: 50px;
+}
